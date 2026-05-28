@@ -1,0 +1,132 @@
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f5f7fb;
+    color: #222;
+}
+
+.container {
+    max-width: 720px;
+    margin: 40px auto;
+    padding: 0 20px;
+}
+
+h1 {
+    text-align: center;
+    margin-bottom: 24px;
+}
+
+.card {
+    background: #fff;
+    padding: 24px;
+    border-radius: 14px;
+    box-shadow: 0 4px 18px rgba(0, 0, 0, 0.08);
+    margin-bottom: 20px;
+}
+
+.hidden {
+    display: none;
+}
+
+input {
+    width: 100%;
+    padding: 12px;
+    margin: 8px 0;
+    border: 1px solid #d0d7de;
+    border-radius: 8px;
+    font-size: 15px;
+}
+
+button {
+    padding: 10px 14px;
+    border: none;
+    border-radius: 8px;
+    background: #0b57d0;
+    color: white;
+    cursor: pointer;
+    font-weight: bold;
+}
+
+button:hover {
+    opacity: 0.9;
+}
+
+button:disabled {
+    background: #999;
+    cursor: not-allowed;
+}
+
+.secondary {
+    background: #555;
+}
+
+.danger {
+    background: #d93025;
+}
+
+.hint {
+    color: #666;
+    font-size: 14px;
+}
+
+.input-row,
+.top-row {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.top-row {
+    justify-content: space-between;
+}
+
+.input-row input {
+    flex: 1;
+}
+
+#todoList {
+    list-style: none;
+    padding: 0;
+    margin-top: 18px;
+}
+
+#todoList li {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background: #f8fafc;
+    border: 1px solid #e5e7eb;
+    border-radius: 10px;
+    padding: 14px;
+    margin-bottom: 10px;
+}
+
+#todoList li.done strong {
+    color: #777;
+    text-decoration: line-through;
+}
+
+#todoList small {
+    display: block;
+    margin-top: 4px;
+    color: #777;
+}
+
+.actions {
+    display: flex;
+    gap: 8px;
+}
+
+.empty {
+    justify-content: center !important;
+    color: #777;
+}
+
+#message {
+    text-align: center;
+    font-weight: bold;
+}
