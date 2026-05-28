@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Todo 관리 API + 웹 UI</title>
+    <link rel="stylesheet" href="/static/style.css">
+    <script src="https://code.jquery.com/jquery-3.7.1.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1>할 일 관리 서비스</h1>
+
+        <section id="authBox" class="card">
+            <h2>로그인</h2>
+            <p class="hint">기본 계정: <b>test</b> / <b>1234</b></p>
+            <input type="text" id="loginUid" placeholder="아이디">
+            <input type="password" id="loginUpwd" placeholder="비밀번호">
+            <button id="loginBtn">로그인</button>
+
+            <hr>
+
+            <h2>회원가입</h2>
+            <input type="text" id="regUname" placeholder="이름">
+            <input type="text" id="regUid" placeholder="아이디">
+            <input type="password" id="regUpwd" placeholder="비밀번호">
+            <button id="registerBtn">회원가입</button>
+        </section>
+
+        <section id="todoBox" class="card hidden">
+            <div class="top-row">
+                <h2><span id="userName"></span>님의 할 일</h2>
+                <button id="logoutBtn" class="secondary">로그아웃</button>
+            </div>
+
+            <div class="input-row">
+                <input type="text" id="todoTitle" placeholder="할 일을 입력하세요">
+                <button id="addBtn">추가</button>
+            </div>
+
+            <ul id="todoList"></ul>
+        </section>
+
+        <p id="message"></p>
+    </div>
+
+    <script src="/static/script.js"></script>
+</body>
+</html>
